@@ -22,6 +22,8 @@ if [ ! -z ${TARGET_PID} ]; then
   sudo kill ${TARGET_PID}
 fi
 
-nohup java -jar -Dserver.port=${TARGET_PORT} /home/ubuntu/aws-gitaction-nginx-service/build/libs/* > /home/ubuntu/nohup.out 2>&1 &
+nohup java -jar \
+-Dspring.config.location=classpath:/application.properties,/home/ubuntu/app/application-oauth.properties \
+-Dserver.port=${TARGET_PORT} /home/ubuntu/aws-gitaction-nginx-service/build/libs/* > /home/ubuntu/nohup.out 2>&1 &
 echo "> Now new WAS runs at ${TARGET_PORT}."
 exit 0
