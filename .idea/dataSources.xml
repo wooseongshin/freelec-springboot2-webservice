@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="default@localhost" uuid="fce44a03-e643-48d5-ba6d-7b7d63d438d6">
-      <driver-ref>h2.unified</driver-ref>
+    <data-source source="LOCAL" name="freelec" uuid="1bf18fcb-fc83-4453-a059-e926c62b0623">
+      <driver-ref>mariadb</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>org.h2.Driver</jdbc-driver>
-      <jdbc-url>jdbc:h2:tcp://localhost:9092/default</jdbc-url>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://my-rds-instance.cish6ckb5r5h.ap-northeast-2.rds.amazonaws.com:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
